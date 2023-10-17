@@ -31,14 +31,6 @@ jobs:
           libsdl2-image-dev \
           libsdl2-mixer-dev \
           libsdl2-ttf-dev
-      shell: bash
-
-    - name: Install Buildozer via Pip
-      run: pip install buildozer
-
-    - name: Install Android Build Tools
-      run: |
-        sudo apt-get update
         sudo apt-get install -y android-sdk-build-tools
       shell: bash
 
