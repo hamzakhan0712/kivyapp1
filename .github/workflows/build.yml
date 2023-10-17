@@ -31,12 +31,13 @@ jobs:
           libsdl2-image-dev \
           libsdl2-mixer-dev \
           libsdl2-ttf-dev
-          # Install Android build tools, including aidl
-        sudo apt-get install -y android-sdk-build-tools
       shell: bash
 
-    - name: Install Buildozer
-      run: pip install buildozer
+    - name: Install Android Build Tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y android-sdk-build-tools
+      shell: bash
 
     - name: Install Cython
       run: pip install cython
