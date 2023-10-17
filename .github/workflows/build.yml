@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8  # You can specify the Python version you need
+        python-version: 3.10  # You can specify the Python version you need
 
     - name: Install system dependencies
       run: |
@@ -38,8 +38,8 @@ jobs:
       run: buildozer init
       continue-on-error: true
 
-    - name: Copy buildozer.spec
-      run: cp build.spec /path/to/your/buildozer.spec
+    - name: Copy buildozer(2).spec
+      run: cp build.spec buildozer(2).spec
       working-directory: .github/workflows  # Adjust the path to your buildozer.spec
 
     - name: Build APK
