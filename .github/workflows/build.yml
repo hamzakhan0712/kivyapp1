@@ -33,6 +33,9 @@ jobs:
           libsdl2-ttf-dev
       shell: bash
 
+    - name: Install Buildozer via Pip
+      run: pip install buildozer
+
     - name: Install Android Build Tools
       run: |
         sudo apt-get update
