@@ -33,6 +33,7 @@ jobs:
             libavcodec-dev \
             zlib1g-dev
           sudo apt-get install -y android-sdk-build-tools  # Add Android build tools
+          pip install cython==0.29.19  # Install Cython
         shell: bash
 
       - name: Install Buildozer
